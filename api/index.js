@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
   credentials: true,
-  origin: 'https://airbnb-clone-chad6lgek-envys-projects.vercel.app/',
+  origin: 'http://localhost:5173',
 }));
 
 async function uploadToS3(path, originalFilename, mimetype) {
